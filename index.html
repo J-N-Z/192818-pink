@@ -2,11 +2,135 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>HTML Academy: Пинк - Главная</title>
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <header class="page-header">
+      <div class="container">
+        <nav class="main-menu">
+          <div class="main-menu__top-panel">
+            <div class="main-menu__logo"></div>
+            <div class="main-menu__switcher"></div>
+          </div>
+          <ul class="main-menu__list">
+            <li class="main-menu__item"><a class="main-menu__link" href="#">Главная</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#">Фотографии</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#">Конкурс</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#">Html academy</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="page-header__intro">
+        <div class="page-header__intro-image"></div>
+        <div class="container">
+          <a class="btn btn--default page-header__intro-button" href="#">Скачать приложение</a>
+          <div class="download">
+            <div class="download__icon"></div>
+            <div class="download__icon"></div>
+            <div class="download__icon"></div>
+            <p class="download__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="intro">
+      <div class="container">
+        <p class="intro__text">Устали от серости мегаполиса?</p>
+        <p class="intro__text">Нам есть, что вам предложить!</p>
+      </div>
+    </div>
+
+    <div class="features">
+      <div class="container">
+        <div class="features__item">
+          <p class="features__item-title">Поднимает настроение</p>
+          <p class="features__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </div>
+        <div class="features__item">
+          <p class="features__item-title">Меняет мир вокруг</p>
+          <p class="features__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </div>
+        <div class="features__item">
+          <p class="features__item-title">Заводит новых друзей</p>
+          <p class="features__item-text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="reviews">
+      <div class="container">
+        <blockquote class="reviews__item">
+          <cite class="reviews__item-name">Николай Петров</cite>
+          <p class="reviews__item-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </blockquote>
+        <blockquote class="reviews__item">
+          <cite class="reviews__item-name">Николай Петров</cite>
+          <p class="reviews__item-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </blockquote>
+        <blockquote class="reviews__item">
+          <cite class="reviews__item-name">Николай Петров</cite>
+          <p class="reviews__item-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="offers">
+      <div class="container">
+      <table>
+        <thead class="offers__item-head">
+          <tr>
+            <th class="offers__item-head">
+              <p class="offers__item-title">Стандарт</p>
+              <p class="offers__item-price">3,99 USD</p>
+            </th>
+          </tr>
+        </thead>
+        <tbody class="offers__item-points">
+          <tr class="offers__item-row">
+            <td>
+              <p class="offers__item-text">Розовый фильтр</p>
+              <i class="offers__item-icon"></i>
+            </td>
+          </tr>
+          <tr class="offers__item-row">
+            <td>
+              <p class="offers__item-text">Смайлики</p>
+              <i class="offers__item-icon"></i>
+            </td>
+          </tr>
+          <tr class="offers__item-row">
+            <td>
+              <p class="offers__item-text">Комментарии</p>
+              <i class="offers__item-icon"></i>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+
+    <div class="contacts">
+      <div class="container">
+        <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
+        <div class="contacts__item">
+          <p class="contacts__item-title">Звоните:</p>
+          <a class="contacts__item-text" href="tel:+78125556666">+7 (812) 555-66-66</a>
+        </div>
+        <div class="contacts__item">
+          <p class="contacts__item-title">Пишите:</p>
+          <a class="contacts__item-text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+        <div class="contacts__item">
+          <p class="contacts__item-title">Приезжайте в гости:</p>
+          <p class="contacts__item-text">ул. Большая Конюшенная, 19/8 </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="map"></div>
 
   </body>
 </html>
