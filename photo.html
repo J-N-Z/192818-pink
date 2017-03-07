@@ -3,28 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк - Фото</title>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <header class="page-header">
-      <div class="container">
-        <nav class="main-menu">
-          <div class="main-menu__top-panel">
-            <div class="main-menu__logo"></div>
-            <div class="main-menu__switcher"></div>
-          </div>
-          <ul class="main-menu__list">
-            <li class="main-menu__item"><a class="main-menu__link" href="#">Главная</a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="#">Фотографии</a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="#">Конкурс</a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="#">Html academy</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="page-header__intro">
-        <div class="container">
-          <p class="page-header__intro-text">Фотографии пользователей</p>
+      <nav class="main-menu">
+        <div class="container main-menu__container">
+            <div class="main-menu__top-panel">
+              <div class="main-menu__logo"></div>
+              <div class="main-menu__switcher main-menu__switcher--active"></div>
+            </div>
+            <ul class="main-menu__list">
+              <li class="main-menu__item"><a class="main-menu__link" href="#">Главная</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="#">Фотографии</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="#">Конкурс</a></li>
+              <li class="main-menu__item"><a class="main-menu__link" href="#">Html academy</a></li>
+            </ul>
         </div>
+      </nav>
+      <div class="page-header__intro">
+        <p class="page-header__intro-text">Фотографии пользователей</p>
       </div>
     </header>
 
@@ -34,7 +34,7 @@
 
     <div class="photos">
       <article class="photos__item">
-        <div class="photos__item-image"><img src="http://placehold.it/150x100" alt=""></div>
+        <div class="photos__item-image photos__item-image--panorama"><img src="img/panorama-mobile@1x.jpg" alt=""></div>
         <div class="container">
           <blockquote class="photos__item-main">
             <header class="photos__item-header">
@@ -48,72 +48,86 @@
       </article>
 
       <div class="container">
-        <article class="photos__item">
-            <div class="photos__item-image"><img src="http://placehold.it/150x100" alt=""></div>
-            <blockquote class="photos__item-main">
-              <header class="photos__item-header">
-                <cite class="photos__item-name">Левон</cite>
-                <p class="photos__item-time">(5 часов назад)</p>
-              </header>
-              <p class="photos__item-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            </blockquote>
-            <a class="photos__item-like" href="#" >Нравится: 667</a>
-        </article>
-        <article class="photos__item">
-            <div class="photos__item-image"><img src="http://placehold.it/150x100" alt=""></div>
-            <blockquote class="photos__item-main">
-              <header class="photos__item-header">
-                <cite class="photos__item-name">Антон</cite>
-                <p class="photos__item-time">(12 часов назад)</p>
-              </header>
-              <p class="photos__item-text">Соседи будут рады!</p>
-            </blockquote>
-            <a class="photos__item-like" href="#" >Нравится: 667</a>
-        </article>
-        <article class="photos__item">
-            <div class="photos__item-image"><img src="http://placehold.it/150x100" alt=""></div>
-            <blockquote class="photos__item-main">
-              <header class="photos__item-header">
-                <cite class="photos__item-name">Борис</cite>
-                <p class="photos__item-time">(20 часов назад)</p>
-              </header>
-              <p class="photos__item-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            </blockquote>
-            <a class="photos__item-like" href="#" >Нравится: 667</a>
-        </article>
-        <article class="photos__item">
-            <div class="photos__item-image"><img src="http://placehold.it/150x100" alt=""></div>
-            <blockquote class="photos__item-main">
-              <header class="photos__item-header">
-                <cite class="photos__item-name">Сергей</cite>
-                <p class="photos__item-time">(25 часов назад)</p>
-              </header>
-              <p class="photos__item-text">Самая кубанская в мире!</p>
-            </blockquote>
-            <a class="photos__item-like" href="#" >Нравится: 667</a>
-        </article>
-        <article class="photos__item">
-            <div class="photos__item-image"><img src="http://placehold.it/150x100" alt=""></div>
-            <blockquote class="photos__item-main">
-              <header class="photos__item-header">
-                <cite class="photos__item-name">Максим</cite>
-                <p class="photos__item-time">(40 часов назад)</p>
-              </header>
-              <p class="photos__item-text">Где снег-то?</p>
-            </blockquote>
-            <a class="photos__item-like" href="#" >Нравится: 667</a>
-        </article>
-        <article class="photos__item">
-            <div class="photos__item-image"><img src="http://placehold.it/150x100" alt=""></div>
-            <blockquote class="photos__item-main">
-              <header class="photos__item-header">
-                <cite class="photos__item-name">Надежда</cite>
-                <p class="photos__item-time">(45 часов назад)</p>
-              </header>
-              <p class="photos__item-text">Всем GM и взаимные лайки!</p>
-            </blockquote>
-            <a class="photos__item-like" href="#" >Нравится: 667</a>
-        </article>
+        <div class="photos__wrap">
+          <article class="photos__item">
+              <div class="photos__item-image"><img src="img/photo-1-mobile@1x.jpg" alt=""></div>
+              <div class="photos__item-wrap">
+                <blockquote class="photos__item-main">
+                  <header class="photos__item-header">
+                    <cite class="photos__item-name">Левон</cite>
+                    <p class="photos__item-time">(5 часов назад)</p>
+                  </header>
+                  <p class="photos__item-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                </blockquote>
+                <a class="photos__item-like" href="#" >Нравится: 667</a>
+              </div>
+          </article>
+          <article class="photos__item">
+              <div class="photos__item-image"><img src="img/photo-2-mobile@1x.jpg" alt=""></div>
+              <div class="photos__item-wrap">
+                <blockquote class="photos__item-main">
+                  <header class="photos__item-header">
+                    <cite class="photos__item-name">Антон</cite>
+                    <p class="photos__item-time">(12 часов назад)</p>
+                  </header>
+                  <p class="photos__item-text">Соседи будут рады!</p>
+                </blockquote>
+                <a class="photos__item-like" href="#" >Нравится: 667</a>
+              </div>
+          </article>
+          <article class="photos__item">
+              <div class="photos__item-image"><img src="img/photo-3-mobile@1x.jpg" alt=""></div>
+              <div class="photos__item-wrap">
+                <blockquote class="photos__item-main">
+                  <header class="photos__item-header">
+                    <cite class="photos__item-name">Борис</cite>
+                    <p class="photos__item-time">(20 часов назад)</p>
+                  </header>
+                  <p class="photos__item-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                </blockquote>
+                <a class="photos__item-like" href="#" >Нравится: 667</a>
+              </div>
+          </article>
+          <article class="photos__item">
+              <div class="photos__item-image"><img src="img/photo-4-mobile@1x.jpg" alt=""></div>
+              <div class="photos__item-wrap">
+                <blockquote class="photos__item-main">
+                  <header class="photos__item-header">
+                    <cite class="photos__item-name">Сергей</cite>
+                    <p class="photos__item-time">(25 часов назад)</p>
+                  </header>
+                  <p class="photos__item-text">Самая кубанская в мире!</p>
+                </blockquote>
+                <a class="photos__item-like" href="#" >Нравится: 667</a>
+              </div>
+          </article>
+          <article class="photos__item">
+              <div class="photos__item-image"><img src="img/photo-5-mobile@1x.jpg" alt=""></div>
+              <div class="photos__item-wrap">
+                <blockquote class="photos__item-main">
+                  <header class="photos__item-header">
+                    <cite class="photos__item-name">Максим</cite>
+                    <p class="photos__item-time">(40 часов назад)</p>
+                  </header>
+                  <p class="photos__item-text">Где снег-то?</p>
+                </blockquote>
+                <a class="photos__item-like" href="#" >Нравится: 667</a>
+              </div>
+          </article>
+          <article class="photos__item">
+              <div class="photos__item-image"><img src="img/photo-6-mobile@1x.jpg" alt=""></div>
+              <div class="photos__item-wrap">
+                <blockquote class="photos__item-main">
+                  <header class="photos__item-header">
+                    <cite class="photos__item-name">Надежда</cite>
+                    <p class="photos__item-time">(45 часов назад)</p>
+                  </header>
+                  <p class="photos__item-text">Всем GM и взаимные лайки!</p>
+                </blockquote>
+                <a class="photos__item-like" href="#" >Нравится: 667</a>
+              </div>
+          </article>
+        </div>
       </div>
     </div>
 
