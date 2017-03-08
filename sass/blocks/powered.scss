@@ -1,0 +1,10 @@
+.powered{
+  &__text,
+  &__icon{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &__icon{
+    margin-left: 15px;
+  }
+}

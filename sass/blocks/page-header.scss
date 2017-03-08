@@ -1,0 +1,32 @@
+.page-header{
+  &__intro-image{
+    height: 400px;
+    background-image: url(../img/bg-back-mobile@1x.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  &__intro .container{
+    background-color: #1d2631;
+    padding: 28px 20px 30px 20px;
+    color: #fff;
+  }
+  &__intro-button{
+    width: 280px;
+    margin-bottom: 30px;
+  }
+  &__intro{
+    &--inner{
+      min-height: 170px;
+      background-image: url(../img/bg-back-mobile@1x.jpg);
+      background-position: 50% 25%;
+    }
+  }
+  &__intro-text{
+    text-align: center;
+    margin: 0;
+    padding: 30px 20px 0 20px;
+    font-size: 24px;
+    font-weight: 200;
+    color: #fff;
+  }
+}

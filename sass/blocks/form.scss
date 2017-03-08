@@ -1,0 +1,133 @@
+.feedback-form{
+  &__section{
+    padding: 35px 0 40px 0;
+    &--marked{
+      background-color: #f2f2f2;
+    }
+    &--first{
+      padding-top: 0;
+    }
+  }
+  &__title{
+    display: block;
+    margin-bottom: 35px;
+    color: #d22856;
+    text-align: center;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__textarea{
+    height: 200px;
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #e5e5e5;
+    font-size: 18px;
+    margin-bottom: 20px;
+    @include placeholder(#283645);
+  }
+  &__btn{
+    background-color: #2aab6d;
+    color: #fff;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+  }
+  &__required{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    span{
+      color: #d22856;
+    }
+  }
+}
+
+.field-text-input{
+  &__item{
+    display: block;
+    margin-bottom: 20px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &__text{
+    color: #d22856;
+    display: block;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    margin-left: 20px;
+  }
+  &__input{
+    display: block;
+    width: 100%;
+    padding: 17px 10px 17px 20px;
+    border: 2px solid #e5e5e5;
+    font-size: 18px;
+    @include placeholder(#283645);
+  }
+}
+
+.field-checkbox,
+.field-radio{
+  &__title{
+    margin: 0 0 35px 0;
+    color: #d22856;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__item{
+    display: block;
+    margin-bottom: 40px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &__input{
+    display: none;
+  }
+  &__text,
+  &__input+span{
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.field-checkbox{
+  &__text{
+    margin-left: 30px;
+    font-size: 18px;
+  }
+  &__input+span{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #e5e5e5;
+    background-color: #fff;
+  }
+  &__input:checked+span{
+    background-image: url(../img/icon-check.svg);
+    background-repeat: no-repeat;
+    background-size: 22px 16px;
+    background-position: center;
+  }
+}
+
+.field-radio{
+  &__text{
+    margin-left: 32px;
+    font-size: 18px;
+  }
+  &__input+span{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    background-color: #fff;
+    box-shadow: 0 0 0 2px #e5e5e5;
+  }
+  &__input:checked+span{
+    background-color: #d22856;
+  }
+}

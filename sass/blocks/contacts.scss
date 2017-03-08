@@ -1,0 +1,28 @@
+.contacts{
+  text-align: center;
+  padding: 40px 0 40px 0;
+  p{
+    margin-top: 0;
+  }
+  &__title{
+    font-size: 24px;
+    font-weight: 200;
+    margin-bottom: 35px;
+  }
+  &__item:not(:last-child){
+    margin-bottom: 20px;
+  }
+  &__item-title{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  &__item-text{
+    display: block;
+    font-size: 24px;
+    font-weight: 200;
+    color: #d22856;
+    text-decoration: none;
+    margin-bottom: 0;
+  }
+}
