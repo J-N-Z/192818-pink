@@ -1,13 +1,16 @@
 @import "normalize.scss";
+@import "variables.scss";
 @import "mixins.scss";
 @import "fonts.scss";
 
 @import "main.scss";
 
+@import "blocks/btn.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-menu.scss";
 @import "blocks/intro.scss";
 @import "blocks/inner-intro.scss";
+@import "blocks/download.scss";
 @import "blocks/features.scss";
 @import "blocks/reviews.scss";
 @import "blocks/offers.scss";
@@ -16,5 +19,10 @@
 @import "blocks/photo-editor.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/socials.scss";
+@import "blocks/social-item.scss";
 @import "blocks/powered.scss";
-@import "blocks/form.scss";
+@import "blocks/feedback-form.scss";
+@import "blocks/field-text.scss";
+@import "blocks/field-radio.scss";
+@import "blocks/field-checkbox.scss";
+@import "blocks/map.scss";

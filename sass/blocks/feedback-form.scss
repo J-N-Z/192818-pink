@@ -1,0 +1,52 @@
+.feedback-form {
+  &__section {
+    padding: 35px 0 40px 0;
+
+    &--marked {
+      background-color: #f2f2f2;
+    }
+
+    &--first {
+      padding-top: 0;
+    }
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 35px;
+    color: $color-marked;
+    text-align: center;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__textarea {
+    height: 200px;
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #e5e5e5;
+    font-size: $font-size-big;
+    margin-bottom: 20px;
+    @include placeholder($color-main);
+  }
+
+  &__btn {
+    background-color: #2aab6d;
+    color: #fff;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+  }
+
+  &__required {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+
+    span {
+      color: $color-marked;
+    }
+  }
+}

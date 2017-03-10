@@ -1,0 +1,11 @@
+.download {
+  text-align: center;
+
+  &__icon {
+    display: inline-block;
+
+    &:not(:last-of-type) {
+      margin-right: 30px;
+    }
+  }
+}

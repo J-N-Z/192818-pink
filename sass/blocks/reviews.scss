@@ -1,18 +1,40 @@
-.reviews{
+.reviews {
   padding: 45px 0 60px 0;
   text-align: center;
-  &__item{
+
+  &__item {
     margin: 0 0 15px 0;
-    &:last-child{
+
+    &:last-child {
       margin: 0;
     }
   }
-  &__item-name{
+
+  &__item-name {
     font-style: normal;
-    font-size: 18px;
+    font-size: $font-size-big;
     font-weight: 600;
   }
-  &__item-text{
+
+  &__item-text {
     line-height: 2;
+  }
+
+  &--skew-after {
+    position: relative;
+
+    &:after {
+      content: "";
+      display: block;
+      height: 25px;
+      background-image: url(../img/bg-triangle-white.svg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      position: absolute;
+      bottom: -25px;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+    }
   }
 }

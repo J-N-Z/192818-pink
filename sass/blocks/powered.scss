@@ -1,10 +1,11 @@
-.powered{
+.powered {
   &__text,
-  &__icon{
+  &__icon {
     display: inline-block;
     vertical-align: middle;
   }
-  &__icon{
+
+  &__icon {
     margin-left: 15px;
   }
 }

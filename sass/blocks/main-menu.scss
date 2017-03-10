@@ -1,32 +1,38 @@
-.main-menu{
-  background-color: #283645;
-  &__container{
+.main-menu {
+  background-color: $color-main;
+
+  &__container {
     padding: 0;
   }
-  &__logo{
+
+  &__logo {
     width: 75px;
     height: 22px;
     background-image: url(../img/logo-pink-white-mobile.svg);
     background-repeat: no-repeat;
     float: left;
   }
-  &__switcher{
+
+  &__switcher {
     float: right;
-    &--active{
+
+    &--active {
       width: 25px;
       height: 25px;
       background-image: url(../img/icon-menu-cross.svg);
       background-repeat: no-repeat;
     }
   }
-  &__list{
+
+  &__list {
     padding: 0;
     margin: 0;
     list-style: none;
   }
-  &__link{
+
+  &__link {
     font-weight: 600;
-    font-size: 18px;
+    font-size: $font-size-big;
     color: #fff;
     text-transform: uppercase;
     display: block;
@@ -36,7 +42,8 @@
     border-bottom: 1px solid #000;
     padding: 19px 15px;
   }
-  &__top-panel{
+
+  &__top-panel {
     padding: 20px;
     @include clearfix();
   }

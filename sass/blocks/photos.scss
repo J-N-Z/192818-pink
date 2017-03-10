@@ -1,24 +1,29 @@
-.photos{
-  &__item{
+.photos {
+  &__item {
     margin-bottom: 20px;
-    &:last-child{
+
+    &:last-child {
       margin-bottom: 0;
     }
   }
-  &__item-image{
+
+  &__item-image {
     font-size: 0;
     max-width: 100%;
-    &--panorama{
+
+    &--panorama {
       position: relative;
-      img{
+
+      img {
         width: 100%;
       }
-      &:after{
+
+      &:after {
         content: "ПАНОРАМА ДНЯ";
         display: block;
         width: 140px;
         height: 36px;
-        background-color: #d22856;
+        background-color: $color-marked;
         color: #fff;
         position: absolute;
         top: 0;
@@ -31,35 +36,42 @@
       }
     }
   }
-  &__item-main{
+
+  &__item-main {
     margin: 0;
   }
-  &__item-wrap{
+
+  &__item-wrap {
     background: #f2f2f2;
     padding: 20px 15px;
     position: relative;
   }
+
   &__item-name,
-  &__item-time{
+  &__item-time {
     display: inline-block;
     vertical-align: baseline;
   }
-  &__item-text{
+
+  &__item-text {
     line-height: 1.7;
     margin: 0 0 15px 0;
   }
-  &__item-name{
+
+  &__item-name {
     font-style: normal;
     font-weight: 600;
     margin-bottom: 10px;
   }
-  &__item-time{
+
+  &__item-time {
     font-size: 12px;
     margin: 0;
     text-transform: uppercase;
   }
-  &__item-like{
-    color: #d22856;
+
+  &__item-like {
+    color: $color-marked;
     padding-left: 20px;
     text-decoration: none;
     text-transform: uppercase;
