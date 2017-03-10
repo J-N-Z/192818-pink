@@ -24,24 +24,24 @@
     display: inline-block;
     vertical-align: middle;
   }
-	
+
 	&__text {
 		margin-left: 30px;
-		font-size: $font-size-big;
-	}
+    font-size: $font-size-big;
+  }
 
-	&__input+span {
-		display: inline-block;
-		width: 40px;
-		height: 40px;
-		border: 2px solid #e5e5e5;
-		background-color: #fff;
-	}
+  &__input+span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #e5e5e5;
+    background-color: #fff;
+  }
 
-	&__input:checked+span {
-		background-image: url(../img/icon-check.svg);
-		background-repeat: no-repeat;
-		background-size: 22px 16px;
-		background-position: center;
-	}
+  &__input:checked+span {
+    background-image: url(../img/icon-check.svg);
+    background-repeat: no-repeat;
+    background-size: 22px 16px;
+    background-position: center;
+  }
 }
