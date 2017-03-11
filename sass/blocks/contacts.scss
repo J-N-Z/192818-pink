@@ -2,7 +2,9 @@
   text-align: center;
   padding: 40px 0 40px 0;
 
-  p {
+  &__title,
+  &__item-title,
+  &__item-text {
     margin-top: 0;
   }
 

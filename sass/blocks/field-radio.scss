@@ -20,7 +20,7 @@
   }
 
   &__text,
-  &__input+span {
+  &__input-visible {
     display: inline-block;
     vertical-align: middle;
   }
@@ -30,7 +30,7 @@
     font-size: $font-size-big;
   }
 
-  &__input+span {
+  &__input-visible {
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -39,7 +39,7 @@
     box-shadow: 0 0 0 2px #e5e5e5;
   }
 
-  &__input:checked+span {
+  &__input:checked+&__input-visible {
     background-color: $color-marked;
   }
 }

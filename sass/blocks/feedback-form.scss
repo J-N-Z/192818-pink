@@ -44,9 +44,9 @@
     text-align: center;
     text-transform: uppercase;
     margin: 0;
+  }
 
-    span {
-      color: $color-marked;
-    }
+  &__required-star {
+    color: $color-marked;
   }
 }

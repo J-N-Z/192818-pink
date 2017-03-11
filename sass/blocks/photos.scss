@@ -7,16 +7,12 @@
     }
   }
 
-  &__item-image {
+  &__item-image-wrap {
     font-size: 0;
     max-width: 100%;
 
-    &--panorama {
+    &--caption {
       position: relative;
-
-      img {
-        width: 100%;
-      }
 
       &:after {
         content: "ПАНОРАМА ДНЯ";
@@ -34,6 +30,12 @@
         text-align: center;
         padding: 10px 10px;
       }
+    }
+  }
+
+  &__item-image {
+    &--panorama {
+      width: 100%;
     }
   }
 
