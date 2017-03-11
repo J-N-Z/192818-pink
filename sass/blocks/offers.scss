@@ -1,0 +1,58 @@
+.offers {
+  padding: 85px 0 40px 0;
+  background-color: #f2f2f2;
+
+  table {
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .offers__item-row td {
+    @include clearfix();
+  }
+
+  &__item-head {
+    background: $color-main;
+    color: #fff;
+    padding: 15px 10px;
+
+    &--hit {
+      position: relative;
+      background: url(../img/bg-hit.svg) no-repeat, $color-main;
+
+      &:before {
+        content: "ХИТ";
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: 8px;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  &__item-title {
+    font-size: $font-size-big;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+  }
+
+  &__item-price {
+    font-size: 24px;
+    font-weight: 200;
+    margin: 0;
+  }
+
+  &__item-text {
+    text-transform: uppercase;
+    margin: 0;
+    padding: 20px 20px;
+    float: left;
+  }
+
+  &__item-icon {
+    float: right;
+    margin-top: 12px;
+    margin-right: 20px;
+  }
+}

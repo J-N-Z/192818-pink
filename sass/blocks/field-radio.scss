@@ -1,0 +1,45 @@
+.field-radio {
+  &__title {
+    margin: 0 0 35px 0;
+    color: $color-marked;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__item {
+    display: block;
+    margin-bottom: 40px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &__text,
+  &__input-visible {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__text {
+    margin-left: 32px;
+    font-size: $font-size-big;
+  }
+
+  &__input-visible {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    background-color: #fff;
+    box-shadow: 0 0 0 2px #e5e5e5;
+  }
+
+  &__input:checked+&__input-visible {
+    background-color: $color-marked;
+  }
+}
