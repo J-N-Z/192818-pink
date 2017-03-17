@@ -33,7 +33,7 @@
 
     <div class="feedback-form">
       <form action="https://echo.htmlacademy.ru/" method="post">
-        <div class="feedback-form__section feedback-form__section--first">
+        <div class="feedback-form__section feedback-form__section--firstn">
           <div class="container">
             <div class="field-text">
               <div class="field-text__items-wrap">
@@ -96,15 +96,20 @@
 
         <div class="feedback-form__section">
           <div class="container">
-            <div class="field-text">
+            <div class="field-text field-text--md-bordered">
+              <p class="field-text__title">Контактная информация</p>
               <div class="field-text__items-wrap">
                 <label class="field-text__item">
                   <span class="field-text__text">Номер телефона</span>
-                  <input class="field-text__input" type="text" name="number" placeholder="Номер, пожалуйста">
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="text" name="number" placeholder="Номер, пожалуйста">
+                  </span>
                 </label>
                 <label class="field-text__item">
                   <span class="field-text__text">адрес почты</span>
-                  <input class="field-text__input" type="text" name="email" placeholder="Введите почту *">
+                  <span class="field-text__input-wrap">
+                   <input class="field-text__input" type="text" name="email" placeholder="Введите почту *">
+                  </span>
                 </label>
               </div>
             </div>
@@ -136,9 +141,9 @@
           </div>
         </div>
 
-        <div class="feedback-form__section">
-          <div class="container">
-            <label for="emotions" class="feedback-form__title">Опишите свои эмоции</label>
+        <div class="container">
+          <div class="feedback-form__section feedback-form__section--md-bordered">
+            <label for="emotions" class="feedback-form__title feedback-form__title--md-bordered">Опишите свои эмоции</label>
             <div class="feedback-form__item">
               <textarea class="feedback-form__textarea" id="emotions" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </div>
@@ -146,8 +151,11 @@
         </div>
 
         <div class="container">
-          <input class="btn btn--default feedback-form__btn" type="submit" value="Отправить форму">
-          <p class="feedback-form__required"><span class="feedback-form__required-star">*</span> — обязательные поля </p>
+          <div class="feedback-form__submit-wrap">
+            <input class="btn btn--default feedback-form__btn" type="submit" value="Отправить форму">
+            <p class="feedback-form__required"><span class="feedback-form__required-star">*</span> — обязательные поля </p>
+          </div>
+
         </div>
 
       </form>
@@ -158,7 +166,7 @@
         <a class="page-footer__logo" href="#">
           <img src="img/logo-pink-blue-mobile.svg" alt="logo">
         </a>
-        <div class="socials">
+        <div class="socials page-footer__socials">
           <a class="social-item" href="#">
             <img class="social-item__icon" src="img/icon-twitter.svg" alt="social-icon">
           </a>
@@ -169,7 +177,7 @@
             <img class="social-item__icon" src="img/icon-youtube.svg" alt="social-icon">
           </a>
         </div>
-        <div class="powered">
+        <div class="powered page-footer__powered">
           <span class="powered__text">Разработано</span>
           <a class="powered__icon" href="#">
             <img src="img/logo-htmlacademy.svg">

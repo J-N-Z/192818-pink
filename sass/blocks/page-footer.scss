@@ -7,3 +7,25 @@
     margin-bottom: 35px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .page-footer {
+    .container {
+      display: flex;
+    }
+    &__logo,
+    &__socials,
+    &__powered {
+      flex-grow: 1;
+    }
+    &__powered {
+      padding-top: 10px;
+    }
+    &__logo {
+      text-align: left;
+    }
+    &__powered {
+      text-align: right;
+    }
+  }
+}

@@ -48,3 +48,63 @@
     @include clearfix();
   }
 }
+
+@media screen and (min-width: 768px) {
+  .main-menu {
+    &__top-panel {
+      padding: 35px 0;
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .main-menu {
+    &__container {
+      display: flex;
+    }
+
+    &__list {
+      flex-grow: 1;
+      justify-content: flex-end;
+      display: flex;
+      align-items: center;
+    }
+
+    &__top-panel {
+
+    }
+
+    &__switcher {
+      display: none;
+    }
+
+    &__item {
+      display: inline-block;
+      vertical-align: top;
+      padding: 0 30px;
+    }
+
+    &__link {
+      border: none;
+      font-weight: 400;
+      padding: 10px 0;
+      border-bottom: 2px solid transparent;
+
+      &:hover {
+        color: $color-marked;
+        border-color: $color-marked;
+      }
+
+      &:active {
+        color: rgba(255,255,255,.3);
+        border-color: rgba(255,255,255,.3);
+      }
+
+      &--active {
+        border-color: #fff;
+      }
+
+
+    }
+  }
+}

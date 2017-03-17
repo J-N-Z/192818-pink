@@ -25,3 +25,95 @@
     @include placeholder($color-main);
   }
 }
+
+.field-text--md-bordered {
+  .field-text__title {
+    display: none;
+    margin: 0 0 35px 0;
+    color: $color-marked;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: $screen-md) {
+  .field-text {
+    &__title {
+      display: block;
+    }
+
+    &__item {
+      display: flex;
+      margin-bottom: 50px;
+    }
+
+    &__text{
+      margin-left: 0;
+      margin-right: 18px;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    &__btn {
+      width: 300px;
+    }
+  }
+
+  .field-text--md-bordered {
+    border: 2px solid #e5e5e5;
+    padding: 40px 50px;
+
+    .field-text__title {
+      position: relative;
+      top: -50px;
+      background: #fff;
+      display: table;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    .field-text__item {
+      flex-direction: column-reverse;
+    }
+
+    .field-text__text {
+      margin-left: 15px;
+      margin-top: 15px;
+    }
+
+    .field-text__input-wrap {
+      position: relative;
+      &:after {
+        content: "";
+        display: block;
+        width: 62px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #e5e5e5;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: $screen-md) {
+  .field-text--md-bordered {
+    .field-text__items-wrap {
+      display: flex;
+    }
+
+    .field-text__item {
+      flex-grow: 1;
+      margin-bottom: 0;
+    }
+
+    .field-text__item:nth-child(odd) {
+      margin-right: 70px;
+    }
+  }
+}
