@@ -10,21 +10,23 @@
 
     <header class="page-header page-header--inner">
       <nav class="main-menu">
-        <div class="container main-menu__container">
-            <div class="main-menu__top-panel">
+        <div class="container main-menu__outer-container">
+          <div class="main-menu__top-panel">
+            <div class="container main-menu__container">
               <div class="main-menu__logo"></div>
               <div class="main-menu__switcher main-menu__switcher--active"></div>
             </div>
-            <ul class="main-menu__list">
-              <li class="main-menu__item"><a class="main-menu__link" href="#">Главная</a></li>
-              <li class="main-menu__item"><a class="main-menu__link main-menu__link--active" href="#">Фотографии</a></li>
-              <li class="main-menu__item"><a class="main-menu__link" href="#">Конкурс</a></li>
-              <li class="main-menu__item"><a class="main-menu__link" href="#">Html academy</a></li>
-            </ul>
+          </div>
+          <ul class="main-menu__list main-menu__list--active">
+            <li class="main-menu__item"><a class="main-menu__link" href="#">Главная</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#">Фотографии</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#">Конкурс</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#">Html academy</a></li>
+          </ul>
         </div>
       </nav>
       <div class="page-header__intro page-header__intro--inner">
-        <p class="page-header__intro-text">Фотографии пользователей</p>
+        <p class="container page-header__intro-text">Фотографии пользователей</p>
       </div>
     </header>
 
@@ -33,7 +35,7 @@
     </div>
 
     <div class="photos">
-      <article class="photos__item">
+      <article class="photos__item photos__item--panorama">
         <div class="photos__item-image-wrap photos__item-image-wrap--caption"><img class="photos__item-image photos__item-image--panorama" src="img/panorama-mobile@1x.jpg" alt=""></div>
         <div class="container">
           <div class="photos__item-wrap">
@@ -166,8 +168,6 @@
           </form>
         </div>
       </div>
-
-
     </div>
 
     <footer class="page-footer">
@@ -194,6 +194,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
 
   </body>
 </html>

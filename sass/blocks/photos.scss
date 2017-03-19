@@ -88,8 +88,8 @@
   .photos {
     &__item {
       flex-basis: 300px;
-        &:last-child {
-          margin-bottom: 20px;
+        &:nth-last-child(2):not(.photos__item--panorama) {
+          margin-bottom: 0;
         }
     }
 
@@ -116,6 +116,16 @@
         padding-left: 0;
         padding-right: 25px;
         background-position: right 2px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $screen-lg) {
+  .photos {
+    &__item {
+      &:nth-last-child(3):not(.photos__item--panorama) {
+        margin-bottom: 0;
       }
     }
   }

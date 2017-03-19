@@ -20,6 +20,10 @@
     line-height: 2;
   }
 
+  &__item-post {
+    display: none;
+  }
+
   &--skew-after {
     position: relative;
 
@@ -36,5 +40,26 @@
       width: 100%;
       z-index: 10;
     }
+  }
+}
+
+@media screen and (min-width: $screen-md) {
+  .reviews__item-post {
+    display: block;
+  }
+
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__item-text {
+    order: -1;
+    font-size: $font-size-big;
+    margin-bottom: 30px;
+  }
+
+  .reviews__item-name {
+    font-size: 20px;
   }
 }

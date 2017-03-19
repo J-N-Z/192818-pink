@@ -5,13 +5,53 @@
 
   &__item {
     margin: 0 0 15px 0;
+    text-align: center;
 
     &:last-child {
       margin: 0;
     }
   }
+
   &__item-title {
     font-size: $font-size-big;
     font-weight: 600;
+  }
+
+  &__item-image {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $screen-md) {
+  .features__inner-container {
+    display: flex;
+  }
+
+  .features__image {
+    margin-right: 40px;
+  }
+
+
+}
+
+@media screen and (min-width: $screen-lg) {
+  .features__image-wrap {
+    display: none;
+  }
+
+  .features__item-image {
+    display: block;
+  }
+
+  .features__inner-container {
+    display: block;
+  }
+
+  .features__items-wrap {
+    display: flex;
+  }
+
+  .features__image {
+    margin-right: 0;
   }
 }

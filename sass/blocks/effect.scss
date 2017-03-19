@@ -1,0 +1,53 @@
+.effect {
+  display: none;
+}
+
+@media screen and (min-width: $screen-md) {
+  .effect {
+    display: block;
+    padding: 60px 0;
+  }
+
+  .effect__inner-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .effect__image,
+  .effect__content {
+    width: 50%;
+  }
+
+  .effect__image {
+    font-size: 96px;
+    font-weight: 600;
+    color: $color-marked;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 12px solid $color-marked;
+    text-align: center;
+    line-height: 170px;
+  }
+
+  .effect__title {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+  }
+
+  .effect__link {
+    color: $color-marked;
+  }
+}
+
+@media screen and (min-width: $screen-lg) {
+  .effect {
+    background-color: #f2f2f2;
+  }
+
+  .effect__content {
+    width: 70%;
+  }
+}

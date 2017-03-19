@@ -2,6 +2,10 @@
   &__section {
     padding: 35px 0 40px 0;
 
+    &--first {
+      padding-top: 0;
+    }
+
     &--marked {
       background-color: #f2f2f2;
     }

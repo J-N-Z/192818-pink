@@ -9,21 +9,23 @@
   <body>
     <header class="page-header page-header--inner">
       <nav class="main-menu">
-        <div class="container main-menu__container">
-            <div class="main-menu__top-panel">
+        <div class="container main-menu__outer-container">
+          <div class="main-menu__top-panel">
+            <div class="container main-menu__container">
               <div class="main-menu__logo"></div>
               <div class="main-menu__switcher main-menu__switcher--active"></div>
             </div>
-            <ul class="main-menu__list">
-              <li class="main-menu__item"><a class="main-menu__link" href="#">Главная</a></li>
-              <li class="main-menu__item"><a class="main-menu__link" href="#">Фотографии</a></li>
-              <li class="main-menu__item"><a class="main-menu__link" href="#">Конкурс</a></li>
-              <li class="main-menu__item"><a class="main-menu__link" href="#">Html academy</a></li>
-            </ul>
+          </div>
+          <ul class="main-menu__list main-menu__list--active">
+            <li class="main-menu__item"><a class="main-menu__link" href="#">Главная</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#">Фотографии</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#">Конкурс</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="#">Html academy</a></li>
+          </ul>
         </div>
       </nav>
       <div class="page-header__intro page-header__intro--inner">
-        <p class="page-header__intro-text">Конкурс на самое безбашенное путешествие с Пинк</p>
+        <p class="container page-header__intro-text">Конкурс на самое безбашенное путешествие с Пинк</p>
       </div>
     </header>
 
@@ -33,7 +35,7 @@
 
     <div class="feedback-form">
       <form action="https://echo.htmlacademy.ru/" method="post">
-        <div class="feedback-form__section feedback-form__section--firstn">
+        <div class="feedback-form__section feedback-form__section--first">
           <div class="container">
             <div class="field-text">
               <div class="field-text__items-wrap">
@@ -155,7 +157,6 @@
             <input class="btn btn--default feedback-form__btn" type="submit" value="Отправить форму">
             <p class="feedback-form__required"><span class="feedback-form__required-star">*</span> — обязательные поля </p>
           </div>
-
         </div>
 
       </form>
@@ -185,6 +186,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
 
   </body>
 </html>
