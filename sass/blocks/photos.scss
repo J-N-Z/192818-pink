@@ -87,7 +87,9 @@
 @media screen and (min-width: $screen-md) {
   .photos {
     &__item {
-      flex-basis: 300px;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
         &:nth-last-child(2):not(.photos__item--panorama) {
           margin-bottom: 0;
         }
@@ -106,6 +108,10 @@
 
     &__item-wrap {
       padding: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
     }
 
     &__item-like {
@@ -118,6 +124,10 @@
         background-position: right 2px;
       }
     }
+  }
+
+  .photos__item--panorama {
+    width: auto;
   }
 }
 

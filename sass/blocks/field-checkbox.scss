@@ -21,7 +21,7 @@
 
   &__text,
   &__input-visible {
-    display: inline-block;
+    // display: inline-block;
     vertical-align: middle;
   }
 
@@ -72,9 +72,15 @@
   }
 
   .field-checkbox__item {
-    width: 33%;
+    width: 31%;
+    margin-right: 2%;
+    display: flex;
   }
   .field-checkbox__text {
     margin-left: 15px;
+  }
+
+  .field-checkbox__input-visible{
+    min-width: 40px;
   }
 }
