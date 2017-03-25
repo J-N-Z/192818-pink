@@ -39,6 +39,27 @@
     border-color: $color-main;
     opacity: 0.1;
   }
+
+  &__range {
+    position: relative;
+  }
+
+  &__range-scale {
+    height: 2px;
+    background-color: $color-main;
+  }
+
+  &__range-point {
+    width: 14px;
+    height: 14px;
+    border: 2px solid $color-marked;
+    background-color: #f2f2f2;
+    position: absolute;
+    top: -6px;
+    left: 70%;
+    border-radius: 50%;
+    cursor: pointer;
+  }
 }
 
 @media screen and (min-width: $screen-md) {
