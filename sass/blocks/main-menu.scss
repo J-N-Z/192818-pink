@@ -1,6 +1,4 @@
 .main-menu {
-  background-color: $color-main;
-
   &__container {
     padding: 0;
   }
@@ -21,11 +19,6 @@
     background-image: url(../img/icon-menu-burger.svg);
     background-repeat: no-repeat;
     background-position: center;
-
-    &--active {
-      height: 25px;
-      background-image: url(../img/icon-menu-cross.svg);
-    }
   }
 
   &__list {
@@ -33,13 +26,7 @@
     margin: 0;
     list-style: none;
     display: none;
-
-    &--active {
-      display: block;
-    }
   }
-
-
 
   &__link {
     font-weight: 600;
@@ -56,12 +43,30 @@
 
   &__top-panel {
     padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
     @include clearfix();
   }
 
   &__outer-container {
     width: auto;
     padding: 0;
+  }
+}
+
+.main-menu--active {
+  background-color: $color-main;
+
+  .main-menu__top-panel {
+    background-color: $color-main;
+  }
+
+  .main-menu__switcher {
+    height: 25px;
+    background-image: url(../img/icon-menu-cross.svg);
+  }
+
+  .main-menu__list {
+    display: block;
   }
 }
 
@@ -95,7 +100,7 @@
     }
 
     &__top-panel {
-
+      background-color: transparent;
     }
 
     &__switcher {

@@ -1,12 +1,10 @@
 (function() {
-  var menuList = document.querySelector(".main-menu__list"),
+  var menu = document.querySelector(".main-menu"),
       menuSwitcher = document.querySelector(".main-menu__switcher");
 
-  menuList.classList.remove("main-menu__list--active");
-  menuSwitcher.classList.remove("main-menu__switcher--active");
+  menu.classList.remove("main-menu--active");
 
   menuSwitcher.addEventListener("click", function() {
-    menuList.classList.toggle("main-menu__list--active");
-    menuSwitcher.classList.toggle("main-menu__switcher--active");
+    menu.classList.toggle("main-menu--active");
   });
 })();

@@ -8,27 +8,22 @@
     padding: 60px 0;
   }
 
-  .effect__inner-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .effect__image,
   .effect__content {
     width: 50%;
+    margin-left: auto;
   }
 
-  .effect__image {
-    font-size: 96px;
-    font-weight: 600;
-    color: $color-marked;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 12px solid $color-marked;
-    text-align: center;
-    line-height: 170px;
+  .effect__inner-container {
+    background-image: url(../img/clock.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    min-height: 290px;
+    display: flex;
+    align-items: center;
+  }
+
+  .effect__content {
+    width: 50%;
   }
 
   .effect__title {
