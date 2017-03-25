@@ -2,6 +2,10 @@
   &__section {
     padding: 35px 0 40px 0;
 
+    &--first {
+      padding-top: 0;
+    }
+
     &--marked {
       background-color: #f2f2f2;
     }
@@ -27,6 +31,7 @@
     border: 2px solid #e5e5e5;
     font-size: $font-size-big;
     margin-bottom: 20px;
+    resize: none;
     @include placeholder($color-main);
   }
 
@@ -48,5 +53,55 @@
 
   &__required-star {
     color: $color-marked;
+  }
+}
+
+@media screen and (min-width: $screen-md) {
+  .feedback-form {
+    margin-bottom: 45px;
+
+    &__section {
+      &--marked {
+        background-color: inherit;
+      }
+
+      &--md-bordered {
+        border: 2px solid #e5e5e5;
+        padding: 40px 50px;
+      }
+    }
+
+    &__title {
+      &--md-bordered {
+        position: relative;
+        top: -50px;
+        background: #fff;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    }
+
+    &__submit-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__btn {
+      width: 300px;
+      margin-bottom: 0;
+    }
+
+    &__required {
+      width: 190px;
+    }
+
+    &__submit-wrap {
+      margin-top: 60px;
+    }
   }
 }

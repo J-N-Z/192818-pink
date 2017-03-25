@@ -1,0 +1,48 @@
+.effect {
+  display: none;
+}
+
+@media screen and (min-width: $screen-md) {
+  .effect {
+    display: block;
+    padding: 60px 0;
+  }
+
+  .effect__content {
+    width: 50%;
+    margin-left: auto;
+  }
+
+  .effect__inner-container {
+    background-image: url(../img/clock.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    min-height: 290px;
+    display: flex;
+    align-items: center;
+  }
+
+  .effect__content {
+    width: 50%;
+  }
+
+  .effect__title {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+  }
+
+  .effect__link {
+    color: $color-marked;
+  }
+}
+
+@media screen and (min-width: $screen-lg) {
+  .effect {
+    background-color: #f2f2f2;
+  }
+
+  .effect__content {
+    width: 70%;
+  }
+}

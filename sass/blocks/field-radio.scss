@@ -39,7 +39,26 @@
     box-shadow: 0 0 0 2px #e5e5e5;
   }
 
-  &__input:checked+&__input-visible {
+  &__input:checked + &__input-visible {
     background-color: $color-marked;
+  }
+}
+
+@media screen and (min-width: $screen-md) {
+  .field-radio {
+    border: 2px solid #e5e5e5;
+    padding: 40px 50px;
+
+    &__title {
+      position: relative;
+      top: -50px;
+      background: #fff;
+      display: table;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
   }
 }

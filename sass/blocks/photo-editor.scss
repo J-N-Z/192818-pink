@@ -40,3 +40,18 @@
     opacity: 0.1;
   }
 }
+
+@media screen and (min-width: $screen-md) {
+  .photo-editor {
+    padding: 50px 0;
+
+    &__container {
+      display: flex;
+    }
+
+    &__preview,
+    &__functional {
+      flex-basis: 50%;
+    }
+  }
+}

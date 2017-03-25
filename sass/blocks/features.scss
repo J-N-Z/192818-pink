@@ -1,17 +1,70 @@
 .features {
-  padding: 50px 0 50px 0;
+  padding: 50px 0 360px 0;
   background-color: #f2f2f2;
   text-align: center;
+  background-image: url(../img/iphone-screen-mobile@1x.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
 
   &__item {
     margin: 0 0 15px 0;
+    text-align: center;
 
     &:last-child {
       margin: 0;
     }
   }
+
   &__item-title {
     font-size: $font-size-big;
     font-weight: 600;
+  }
+
+  &__item-image {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $screen-md) {
+  .features {
+    padding: 50px 0 50px 0;
+    background-position: 20% center;
+  }
+
+  .features__inner-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .features__items-wrap {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: $screen-lg) {
+  .features {
+    background-image: none;
+  }
+
+  .features__item-image {
+    display: block;
+  }
+
+  .features__inner-container {
+    display: block;
+  }
+
+  .features__items-wrap {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+  }
+
+  .features__item {
+    width: 250px;
+  }
+
+  .features__item-title {
+    font-size: 30px;
   }
 }

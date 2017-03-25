@@ -1,6 +1,4 @@
 .main-menu {
-  background-color: $color-main;
-
   &__container {
     padding: 0;
   }
@@ -15,19 +13,19 @@
 
   &__switcher {
     float: right;
-
-    &--active {
-      width: 25px;
-      height: 25px;
-      background-image: url(../img/icon-menu-cross.svg);
-      background-repeat: no-repeat;
-    }
+    width: 50px;
+    height: 24px;
+    margin-right: 30px;
+    background-image: url(../img/icon-menu-burger.svg);
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   &__list {
     padding: 0;
     margin: 0;
     list-style: none;
+    display: none;
   }
 
   &__link {
@@ -45,6 +43,95 @@
 
   &__top-panel {
     padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
     @include clearfix();
+  }
+
+  &__outer-container {
+    width: auto;
+    padding: 0;
+  }
+}
+
+.main-menu--active {
+  background-color: $color-main;
+
+  .main-menu__top-panel {
+    background-color: $color-main;
+  }
+
+  .main-menu__switcher {
+    height: 25px;
+    background-image: url(../img/icon-menu-cross.svg);
+  }
+
+  .main-menu__list {
+    display: block;
+  }
+}
+
+@media screen and (min-width: $screen-md) {
+  .main-menu {
+    &__top-panel {
+      padding: 35px 0;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-lg) {
+  .main-menu {
+    background-color: rgba(0, 0, 0, 0.3);
+
+    &__outer-container {
+      display: flex;
+      width: 960px;
+    }
+
+    &__container {
+      display: flex;
+      width: auto;
+    }
+
+    &__list {
+      flex-grow: 1;
+      justify-content: flex-end;
+      display: flex;
+      align-items: center;
+    }
+
+    &__top-panel {
+      background-color: transparent;
+    }
+
+    &__switcher {
+      display: none;
+    }
+
+    &__item {
+      display: inline-block;
+      vertical-align: top;
+      padding: 0 30px;
+    }
+
+    &__link {
+      border: none;
+      font-weight: 400;
+      padding: 10px 0;
+      border-bottom: 2px solid transparent;
+
+      &:hover {
+        color: $color-marked;
+        border-color: $color-marked;
+      }
+
+      &:active {
+        color: rgba(255,255,255,.3);
+        border-color: rgba(255,255,255,.3);
+      }
+
+      &--active {
+        border-color: #fff;
+      }
+    }
   }
 }
