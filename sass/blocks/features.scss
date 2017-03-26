@@ -23,6 +23,10 @@
   &__item-image {
     display: none;
   }
+
+  &__image {
+    max-width: 100%;
+  }
 }
 
 @media screen and (min-width: $screen-md) {
@@ -34,6 +38,8 @@
   .features__inner-container {
     display: flex;
     justify-content: flex-end;
+    position: relative;
+    z-index: 2;
   }
 
   .features__items-wrap {
@@ -43,6 +49,7 @@
 
 @media screen and (min-width: $screen-lg) {
   .features {
+    padding-top: 0;
     background-image: none;
   }
 

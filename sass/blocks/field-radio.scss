@@ -37,6 +37,14 @@
     border: 10px solid #fff;
     background-color: #fff;
     box-shadow: 0 0 0 2px #e5e5e5;
+
+    &:hover {
+      box-shadow: 0 0 0 2px $color-main;
+    }
+
+    &:active {
+      box-shadow: 0 0 0 2px $color-marked;
+    }
   }
 
   &__input:checked + &__input-visible {

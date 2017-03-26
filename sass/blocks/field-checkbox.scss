@@ -36,6 +36,14 @@
     height: 40px;
     border: 2px solid #e5e5e5;
     background-color: #fff;
+
+    &:hover {
+      border-color: $color-main;
+    }
+
+    &:active {
+      border-color: $color-marked;
+    }
   }
 
   &__input:checked + &__input-visible {

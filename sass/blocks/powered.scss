@@ -7,5 +7,15 @@
 
   &__icon {
     margin-left: 15px;
+
+    &:hover {
+      path {
+        fill: $color-main;
+      }
+    }
+
+    &:active {
+      opacity: .3;
+    }
   }
 }

@@ -10,6 +10,16 @@
   &__intro-button {
     width: 280px;
     margin-bottom: 30px;
+
+    &:hover {
+      background-color: #fff;
+      color: $color-marked;
+    }
+
+    &:active {
+      color: rgba(210,40,86,.3);
+    }
+
   }
 
   &__intro-text {

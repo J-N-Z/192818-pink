@@ -8,6 +8,14 @@
   position: relative;
   border-radius: 50%;
 
+  &:hover {
+    border-color: $color-main;
+  }
+
+  &:active {
+    opacity: .3;
+  }
+
   &__icon {
     position: absolute;
     top: 0;

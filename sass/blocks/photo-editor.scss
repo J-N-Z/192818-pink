@@ -26,18 +26,38 @@
   &__btn-cancel {
     width: 100%;
     background-color: transparent;
+    outline: none;
   }
 
   &__btn-submit {
     margin-bottom: 12px;
     color: $color-marked;
     border-color: $color-marked;
+
+    &:hover {
+      background-color: $color-marked;
+      color: #fff;
+    }
+
+    &:active {
+      background-color: $color-marked;
+      color: rgba(255,255,255,.3);
+    }
   }
 
   &__btn-cancel {
-    color: $color-main;
-    border-color: $color-main;
-    opacity: 0.1;
+    color: #b5b9be;
+    border-color: #b5b9be;
+    opacity: .3;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      background-color: #b5b9be;
+      color: rgba(255,255,255,.3);
+    }
   }
 
   &__range {
@@ -59,6 +79,10 @@
     left: 70%;
     border-radius: 50%;
     cursor: pointer;
+
+    &:active {
+      background-color: $color-marked;
+    }
   }
 }
 
