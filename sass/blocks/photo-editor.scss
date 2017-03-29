@@ -84,6 +84,18 @@
       background-color: $color-marked;
     }
   }
+
+  &__control-icon {
+    fill: #b5b9be;
+
+    &:hover {
+      fill: #8d949b;
+    }
+
+    &:active {
+      fill: $color-marked;
+    }
+  }
 }
 
 @media screen and (min-width: $screen-md) {
