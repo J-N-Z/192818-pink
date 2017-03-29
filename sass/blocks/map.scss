@@ -10,8 +10,13 @@
   }
 }
 
+.map__triangle {
+  width: 100%;
+}
+
 @media screen and (min-width: $screen-md) {
   .map {
+    height: 380px;
     background-image: url(../img/bg-map-tablet@1x.jpg);
     background-size: 700px auto;
 
@@ -23,6 +28,7 @@
 
 @media screen and (min-width: $screen-lg) {
   .map {
+    height: 510px;
     background-image: url(../img/bg-map-desktop@1x.jpg);
     background-size: 1200px auto;
 

@@ -63,3 +63,32 @@
     font-size: 20px;
   }
 }
+
+@media screen and (min-width: $screen-lg) {
+  .reviews {
+    padding: 70px 0 60px 0;
+  }
+
+  .reviews__item {
+    padding-top: 110px;
+    position: relative;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 84px;
+      height: 62px;
+      background-image: url(../img/icon-quotes.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -42px;
+    }
+  }
+
+  .reviews__item-text {
+    margin-top: 0;
+  }
+}
