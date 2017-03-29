@@ -13,7 +13,13 @@
         <div class="container main-menu__outer-container">
           <div class="main-menu__top-panel">
             <div class="container main-menu__container">
-              <div class="main-menu__logo"></div>
+              <div class="main-menu__logo">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo-pink-white-tablet.svg">
+                  <img  src="img/logo-pink-white-mobile.svg" alt="photo">
+                </picture>
+              </div>
               <div class="main-menu__switcher"></div>
             </div>
           </div>
@@ -221,7 +227,10 @@
     <footer class="page-footer">
       <div class="container">
         <a class="page-footer__logo" href="#">
-          <img src="img/logo-pink-blue-mobile.svg" alt="logo">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img  src="img/logo-pink-blue-mobile.svg" alt="logo">
+          </picture>
         </a>
         <div class="socials page-footer__socials">
           <a class="social-item" href="#">
