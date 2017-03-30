@@ -17,6 +17,7 @@
     background-image: url(../img/clock.png);
     background-repeat: no-repeat;
     background-position: left center;
+    background-size: 240px 275px;
     min-height: 290px;
     display: flex;
     align-items: center;
@@ -40,9 +41,16 @@
 @media screen and (min-width: $screen-lg) {
   .effect {
     background-color: #f2f2f2;
+    padding-top: 0;
+    padding-bottom: 50px;
   }
 
   .effect__content {
-    width: 70%;
+    width: 61%;
+  }
+
+  .effect__inner-container {
+    min-height: 350px;
+    background-size: auto;
   }
 }
