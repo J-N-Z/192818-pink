@@ -62,6 +62,10 @@
 
   &__range {
     position: relative;
+
+    &--private {
+      display: none;
+    }
   }
 
   &__range-scale {
@@ -106,9 +110,120 @@
       display: flex;
     }
 
+    &__panel {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+
+    &__control {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #dddfe0;
+      height: 55px;
+    }
+
+    &__control-icon {
+      display: table;
+      margin: 0 auto;
+      fill: $color-marked;
+
+      &--crop {
+        width: 22px;
+        height: 22px;
+      }
+      &--fill {
+        width: 24px;
+        height: 22px;
+      }
+      &--contrast {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    &__control-icon-wrap {
+      width: 30px;
+      margin-right: 25px;
+      text-align: center;
+    }
+
     &__preview,
     &__functional {
       flex-basis: 50%;
+    }
+
+    &__preview {
+      margin-bottom: 0;
+    }
+
+    &__functional {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__form {
+      margin-top: auto;
+    }
+
+    &__btn-submit {
+      margin-bottom: 24px;
+    }
+
+    &__range--private {
+      display: block;
+    }
+
+    &__range--common {
+      display: none;
+    }
+
+    &__range--private {
+      flex-grow: 1;
+    }
+
+    &__preview {
+      margin-right: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-lg) {
+  .photo-editor {
+    &__preview-wrap {
+      text-align: center;
+    }
+
+    &__control-icon-wrap {
+      width: 50px;
+      margin-right: 40px;
+    }
+
+    &__control {
+      height: 70px;
+    }
+
+    &__control-icon {
+      &--crop {
+        width: 45px;
+        height: 45px;
+      }
+      &--fill {
+        width: 48px;
+        height: 43px;
+      }
+      &--contrast {
+        width: 32px;
+        height: 32px;
+      }
+    }
+
+    &__form {
+      display: flex;
+    }
+
+    &__btn-submit {
+      margin-bottom: 0;
+      margin-right: 40px;
     }
   }
 }
