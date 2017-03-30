@@ -8,7 +8,8 @@
 
   &__panel {
     border-bottom: 1px solid #dddfe0;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
+    padding-bottom: 35px;
   }
 
   &__controls {
@@ -96,8 +97,28 @@
       fill: #8d949b;
     }
 
-    &:active {
+    &:active,
+    &--active {
       fill: $color-marked;
+    }
+  }
+
+  &__control {
+    margin: 0 18px;
+  }
+
+  &__control-icon {
+    &--crop {
+      width: 43px;
+      height: 43px;
+    }
+    &--fill {
+      width: 48px;
+      height: 43px;
+    }
+    &--contrast {
+      width: 32px;
+      height: 32px;
     }
   }
 }
