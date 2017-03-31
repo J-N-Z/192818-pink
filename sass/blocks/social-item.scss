@@ -16,6 +16,7 @@
     opacity: .3;
   }
 
+
   &__icon {
     position: absolute;
     top: 0;
@@ -23,5 +24,20 @@
     bottom: 0;
     right: 0;
     margin: auto;
+
+    &--twitter {
+      width: 18px;
+      height: 15px;
+    }
+
+    &--facebook {
+      width: 9px;
+      height: 19px;
+    }
+
+    &--youtube {
+      width: 15px;
+      height: 14px;
+    }
   }
 }

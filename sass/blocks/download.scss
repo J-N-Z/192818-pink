@@ -8,6 +8,21 @@
       margin-right: 30px;
     }
   }
+
+  &__icon-apple {
+    width: 46px;
+    height: 56px;
+  }
+
+  &__icon-android {
+    width: 42px;
+    height: 47px;
+  }
+
+  &__icon-microsoft {
+    width: 44px;
+    height: 42px;
+  }
 }
 
 @media screen and (min-width: $screen-md) {
