@@ -35,23 +35,18 @@
     margin-bottom: 0;
   }
 
-  &--triangle-after {
-    position: relative;
+  &__item-link {
+    &:hover {
+      color: $color-main;
+      text-decoration: underline;
+    }
 
-    &:after {
-      content: "";
-      display: block;
-      height: 34px;
-      background-image: url(../img/bg-triangle-white-footer.svg);
-      background-size: 100%;
-      background-repeat: no-repeat;
-      position: absolute;
-      bottom: -34px;
-      left: 0;
-      width: 100%;
-      z-index: 10;
+    &:active {
+      opacity: .3;
+      text-decoration: none;
     }
   }
+
 }
 
 @media screen and (min-width: $screen-md) {

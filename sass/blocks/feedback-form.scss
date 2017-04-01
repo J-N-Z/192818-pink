@@ -43,6 +43,16 @@
     border-radius: 5px;
     text-transform: uppercase;
     margin-bottom: 35px;
+    outline: none;
+
+    &:hover {
+      background-color: #1c9b5e;
+    }
+
+    &:active {
+      background-color: #1c9b5e;
+      color: rgba(255,255,255,.3);
+    }
   }
 
   &__required {

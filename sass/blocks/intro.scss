@@ -1,5 +1,6 @@
 .intro {
-  padding: 30px 25px 25px 25px;
+  // padding: 30px 25px 25px 25px;
+  padding-top: 25px;
   text-align: center;
 
   &__text {
@@ -8,34 +9,47 @@
     color: $color-main;
   }
 
-  &--skew-after {
+  &__triangle {
     position: relative;
+    width: 100%;
+    z-index: 1;
+    bottom: -58px;
+    height: 55px;
+    position: relative;
+    z-index: 1;
+  }
 
-    &:after {
-      content: "";
-      display: block;
-      height: 25px;
-      background-image: url(../img/bg-triangle-white.svg);
-      background-size: 100%;
-      background-repeat: no-repeat;
-      position: absolute;
-      bottom: -25px;
-      left: 0;
-      width: 100%;
-      z-index: 10;
-    }
+  &__container {
+    margin-bottom: -50px;
   }
 }
 
 @media screen and (min-width: $screen-md) {
+  .intro {
+    padding-top: 50px;
+  }
+
   .intro__text {
     font-size: 40px;
     margin: 5px 0;
   }
+
+  .intro__triangle {
+    bottom: -94px;
+    height: 90px;
+  }
 }
 
-@media screen and (min-width: $screen-md) {
+@media screen and (min-width: $screen-lg) {
+  .intro {
+    padding-top: 60px;
+  }
+
   .intro__text {
     font-size: 50px;
+  }
+
+  .intro__container {
+    margin-bottom: -25px;
   }
 }

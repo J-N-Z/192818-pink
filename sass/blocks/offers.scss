@@ -1,6 +1,14 @@
 .offers {
-  padding: 85px 0 40px 0;
+  padding: 0 0 35px 0;
   background-color: #f2f2f2;
+
+  &__triangle {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    // bottom: -58px;
+    height: 25px;
+  }
 
   th, td {
     border: 2px solid #e5e5e5;
@@ -60,6 +68,16 @@
     margin-top: 12px;
     margin-right: 20px;
   }
+
+  &__item-icon-yes {
+    width: 31px;
+    height: 21px;
+  }
+
+  &__item-icon-no {
+    width: 27px;
+    height: 27px;
+  }
 }
 
 .offers table {
@@ -72,9 +90,18 @@
 
 .offers__container {
   overflow-x: auto;
+  margin-top: 60px;
+}
+
+.offers__dots {
+  margin-top: 35px;
 }
 
 @media screen and (min-width: $screen-md) {
+  .offers{
+    padding: 0 0 65px 0;
+  }
+
   .mobile-hidden {
     display: table-cell;
   }
@@ -89,9 +116,25 @@
     text-align: center;
     margin-right: 0;
   }
+
+  .offers__triangle {
+    height: 50px;
+  }
+
+  .offers__container {
+    margin-top: 40px;
+  }
+
+  .offers__dots {
+    display: none;
+  }
 }
 
-@media screen and (min-width: $screen-md) {
+@media screen and (min-width: $screen-lg) {
+  .offers{
+    padding: 0 0 95px 0;
+  }
+
   .offers table {
     margin: 0 auto;
 
@@ -100,5 +143,13 @@
       border-top-color: #f2f2f2;
       border-left-color: #f2f2f2;
     }
+  }
+
+  .offers__triangle {
+    height: 85px;
+  }
+
+  .offers__container {
+    margin-top: 80px;
   }
 }
