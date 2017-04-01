@@ -86,5 +86,3 @@ gulp.task("serve", function() {
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("*.html", ["html:update"]);
 });
-
-
