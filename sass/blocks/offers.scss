@@ -6,7 +6,6 @@
     position: relative;
     width: 100%;
     z-index: 1;
-    // bottom: -58px;
     height: 25px;
   }
 
@@ -14,14 +13,10 @@
     border: 2px solid #e5e5e5;
   }
 
-  table {
+  &__table {
     width: 100%;
     background-color: #fff;
     border-collapse: collapse;
-  }
-
-  .offers__item-row td {
-    @include clearfix();
   }
 
   &__item-head {
@@ -80,7 +75,7 @@
   }
 }
 
-.offers table {
+.offers__table {
   width: 840px;
 }
 
@@ -135,7 +130,7 @@
     padding: 0 0 95px 0;
   }
 
-  .offers table {
+  .offers__table {
     margin: 0 auto;
 
     th:first-child {

@@ -1,7 +1,8 @@
 .page-header {
   background-image: url(../img/bg-back-mobile@1x.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: 50% 0%;
+  background-color: #24303e;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url(../img/bg-back-mobile@2x.jpg);
@@ -162,34 +163,42 @@
 
   .page-header__intro-button {
     margin-bottom: 60px;
+    font-size: 21px;
+    width: auto;
   }
 
   .page-header__intro {
     min-height: 740px;
   }
 
+  .page-header__intro .container {
+    padding: 5px 20px 30px 20px;
+  }
+
   .page-header__intro--inner {
-    min-height: 330px;
+    min-height: 285px;
   }
 
   .page-header__intro-lead {
     width: 315px;
-    margin-top: 90px;
+    margin-top: 75px;
   }
 
   .page-header__intro-lead-text {
     margin-top: 0;
+    font-size: 50px;
   }
 
   .page-header__intro-text {
     font-size: 50px;
+    line-height: 1.2;
   }
 
   .page-header__intro-image {
     height: 645px;
     background-image: url(../img/iphone-hand-desktop@1x.png);
     background-size: 1050px auto;
-    background-position: -50% 0;
+    background-position: -15% 0;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url(../img/iphone-hand-desktop@2x.png);

@@ -7,11 +7,8 @@
     }
   }
 
-  &__item-image-wrap {
-    max-width: 100%;
-
-    &--caption {
-      position: relative;
+  &__caption-container {
+    position: relative;
 
       &:after {
         content: "ПАНОРАМА ДНЯ";
@@ -22,14 +19,17 @@
         color: #fff;
         position: absolute;
         top: 0;
-        right: 20px;
+        right: 0;
         font-size: 12px;
         font-weight: 600;
         text-transform: uppercase;
         text-align: center;
         padding: 10px 10px;
       }
-    }
+  }
+
+  &__item-image-wrap {
+    max-width: 100%;
   }
 
   &__item-image {
@@ -98,6 +98,14 @@
 
 @media screen and (min-width: $screen-md) {
   .photos {
+    &__caption-container {
+      position: relative;
+
+      &:after {
+        top: 55px;
+      }
+    }
+
     &__item {
       width: 300px;
       display: flex;

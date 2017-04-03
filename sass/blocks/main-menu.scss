@@ -82,6 +82,10 @@
 
 @media screen and (min-width: $screen-lg) {
   .main-menu {
+    &__top-panel {
+        padding: 25px 0 40px;
+    }
+
     &__outer-container {
       display: flex;
       width: 960px;
@@ -106,7 +110,7 @@
     &__item {
       display: inline-block;
       vertical-align: top;
-      padding: 0 30px;
+      padding: 0 37px;
     }
 
     &__link {
@@ -114,6 +118,7 @@
       font-weight: 400;
       padding: 10px 0;
       border-bottom: 2px solid transparent;
+      text-transform: none;
 
       &:hover {
         color: $color-marked;

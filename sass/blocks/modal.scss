@@ -1,0 +1,88 @@
+.modal {
+  padding: 40px 0 50px 0;
+  text-align: center;
+  box-shadow: 0px 3px 25px 1px rgba(0,0,0,.15);
+  margin-bottom: 30px;
+
+  &__wrap {
+    padding: 0 20px;
+  }
+
+  &__title {
+    font-size: $font-size-big;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-weight: 600;
+  }
+
+  &__text {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  &__btn {
+    background-color: #2aab6d;
+    color: #fff;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    text-transform: uppercase;
+    outline: none;
+    font-weight: 600;
+    font-size: $font-size-big;
+    padding: 20px 10px;
+
+    &:hover {
+      background-color: #1c9b5e;
+    }
+
+    &:active {
+      background-color: #1c9b5e;
+      color: rgba(255,255,255,.3);
+    }
+  }
+
+  &__bottom {
+    background: #f2f2f2;
+    padding: 48px 0 52px 0;
+  }
+}
+
+.modal--with-bottom {
+  padding-bottom: 0;
+}
+
+@media screen and (min-width: $screen-md) {
+  .modal {
+    max-width: 460px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__wrap {
+      padding: 0 70px;
+    }
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__text {
+      font-size: $font-size-big;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-lg) {
+  .modal {
+    max-width: 460px;
+  }
+
+  .modal--with-bottom {
+    max-width: 780px;
+
+    .modal__wrap {
+      padding-left: 160px;
+      padding-right: 160px;
+    }
+  }
+}
