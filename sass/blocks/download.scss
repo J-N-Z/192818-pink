@@ -1,11 +1,17 @@
 .download {
   text-align: center;
 
+  &__description {
+    margin-top: 21px;
+    margin-bottom: 0;
+    line-height: 1.7;
+  }
+
   &__icon {
     display: inline-block;
 
     &:not(:last-of-type) {
-      margin-right: 30px;
+      margin-right: 34px;
     }
   }
 
@@ -26,8 +32,25 @@
 }
 
 @media screen and (min-width: $screen-md) {
+  .download {
+    text-align: left;
+  }
+
   .download__description {
     font-size: $font-size-big;
+    margin-top: 32px;
+    margin-bottom: 0;
+    line-height: 1.4;
+    margin-left: -30px;
+  }
+
+  .download__icon {
+    &:not(:last-of-type) {
+      margin: 0 20px;
+    }
+
+    display: inline-block;
+    margin: 0 20px;
   }
 }
 

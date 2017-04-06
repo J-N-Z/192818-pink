@@ -1,9 +1,9 @@
 .reviews {
-  padding: 45px 0 60px 0;
+  padding: 45px 0 35px 0;
   text-align: center;
 
   &__item {
-    margin: 0 0 15px 0;
+    margin: 0 0 35px 0;
 
     &:last-child {
       margin: 0;
@@ -17,7 +17,7 @@
   }
 
   &__item-text {
-    line-height: 2;
+    line-height: 2.2;
   }
 
   &__item-post {
@@ -27,18 +27,24 @@
 
 @media screen and (min-width: $screen-md) {
   .reviews__item-post {
+    padding: 0 0 14px 0;
+  }
+
+  .reviews__item-post {
     display: block;
   }
 
   .reviews__item {
     display: flex;
     flex-direction: column;
+    margin: 0 0 12px 0;
   }
 
   .reviews__item-text {
     order: -1;
     font-size: $font-size-big;
     margin-bottom: 30px;
+    line-height: 1.8;
   }
 
   .reviews__item-name {

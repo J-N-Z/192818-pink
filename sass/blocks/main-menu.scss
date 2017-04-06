@@ -18,7 +18,8 @@
   &__switcher {
     width: 50px;
     height: 24px;
-    margin-right: 30px;
+    margin-right: 40px;
+    margin-top: -3px;
     background-image: url(../img/icon-menu-burger.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -45,7 +46,7 @@
   }
 
   &__top-panel {
-    padding: 20px;
+    padding: 18px 20px;
     @include clearfix();
   }
 

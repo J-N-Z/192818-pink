@@ -1,6 +1,9 @@
 .feedback-form {
+  margin-top: -8px;
+  margin-bottom: 23px;
+
   &__section {
-    padding: 35px 0 40px 0;
+    padding: 35px 0 43px 0;
 
     &--first {
       padding-top: 0;
@@ -17,7 +20,7 @@
 
   &__title {
     display: block;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
     color: $color-marked;
     text-align: center;
     text-transform: uppercase;
@@ -31,6 +34,7 @@
     border: 2px solid #e5e5e5;
     font-size: $font-size-big;
     margin-bottom: 20px;
+    margin-top: -18px;
     resize: none;
     @include placeholder($color-main);
   }
@@ -43,6 +47,7 @@
     border-radius: 5px;
     text-transform: uppercase;
     margin-bottom: 35px;
+    padding: 20px 10px;
     outline: none;
 
     &:hover {
@@ -53,6 +58,10 @@
       background-color: #1c9b5e;
       color: rgba(255,255,255,.3);
     }
+  }
+
+  &__submit-wrap {
+    margin-top: -20px;
   }
 
   &__required {

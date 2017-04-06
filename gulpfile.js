@@ -64,8 +64,12 @@ gulp.task("symbols", function() {
     .pipe(gulp.dest("img"));
 });
 
+// gulp.task("build", function(fn) {
+//   run("clean","copy","style","images","symbols",fn);
+// });
+
 gulp.task("build", function(fn) {
-  run("clean","copy","style","images","symbols",fn);
+  run("clean","copy","style",fn);
 });
 
 gulp.task("html:copy", function() {

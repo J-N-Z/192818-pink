@@ -1,6 +1,6 @@
 .photos {
   &__item {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 
     &:last-child {
       margin-bottom: 0;
@@ -19,7 +19,7 @@
         color: #fff;
         position: absolute;
         top: 0;
-        right: 0;
+        right: 20px;
         font-size: 12px;
         font-weight: 600;
         text-transform: uppercase;
@@ -46,7 +46,7 @@
 
   &__item-wrap {
     background: #f2f2f2;
-    padding: 20px 15px;
+    padding: 20px 18px 21px 18px;
     position: relative;
   }
 
@@ -57,14 +57,14 @@
   }
 
   &__item-text {
-    line-height: 1.7;
-    margin: 0 0 15px 0;
+    line-height: 1.75;
+    margin: 0 0 12px 0;
   }
 
   &__item-name {
     font-style: normal;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 3px;
   }
 
   &__item-time {
@@ -75,7 +75,7 @@
 
   &__item-like {
     color: $color-marked;
-    padding-left: 20px;
+    padding-left: 31px;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 12px;

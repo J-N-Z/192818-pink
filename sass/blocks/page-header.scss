@@ -9,7 +9,7 @@
   }
 
   &__intro .container {
-    padding: 28px 20px 30px 20px;
+    padding: 28px 20px 32px 20px;
     color: #fff;
     position: relative;
     z-index: 2;
@@ -44,6 +44,7 @@
     padding: 30px 20px 30px 20px;
     font-size: 24px;
     font-weight: 200;
+    line-height: 1.3;
     color: #fff;
     min-height: 170px;
   }
@@ -106,7 +107,7 @@
   }
 
   .page-header__intro-lead {
-    width: 50%;
+    width: 53%;
     text-align: center;
   }
 
@@ -114,8 +115,11 @@
     font-size: 40px;
     display: block;
     font-weight: 200;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 20px;
+    padding-right: 62px;
+    padding-top: 24px;
+    line-height: 1.2;
+    margin-bottom: 32px;
   }
 
   .page-header__intro-image {
@@ -125,8 +129,8 @@
     width: 100%;
     height: 545px;
     background-image: url(../img/iphone-hand-tablet@1x.png);
-    background-size: 620px auto;
-    background-position: right bottom;
+    background-size: 700px auto;
+    background-position: 45% bottom;
     z-index: 1;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -139,9 +143,10 @@
   }
 
   .page-header__intro-button {
-    margin-left: auto;
+    width: 305px;
+    margin-left: -22px;
     margin-right: auto;
-    margin-bottom: 40px;
+    margin-bottom: 47px;
   }
 }
 
