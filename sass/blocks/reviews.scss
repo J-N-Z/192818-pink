@@ -26,6 +26,10 @@
 }
 
 @media screen and (min-width: $screen-md) {
+  .reviews {
+    padding: 45px 0 13px 0;
+  }
+
   .reviews__item-post {
     padding: 0 0 14px 0;
   }

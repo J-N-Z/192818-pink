@@ -53,7 +53,7 @@
 
     &__item {
       display: flex;
-      margin-bottom: 50px;
+      margin-bottom: 53px;
     }
 
     &__text{
@@ -112,6 +112,8 @@
     }
 
     .field-text__item--phone {
+      margin-bottom: 35px;
+
       .field-text__input-wrap {
         &:after {
           background-image: url(../img/icon-form-phone.svg);
@@ -123,6 +125,8 @@
     }
 
     .field-text__item--mail {
+      margin-bottom: 8px;
+
       .field-text__input-wrap {
         &:after {
           background-image: url(../img/icon-form-mail.svg);

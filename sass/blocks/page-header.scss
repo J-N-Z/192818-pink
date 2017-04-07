@@ -74,9 +74,10 @@
 
 @media screen and (min-width: $screen-md) {
   .page-header__intro {
-    &.container {
+    .container {
       width: 660px;
-      padding: 0 20px;
+      padding: 70px 20px 32px 20px;
+      line-height: 1.2;
     }
   }
 
@@ -95,15 +96,16 @@
   }
 
   .page-header__intro--inner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    // align-items: center;
+    // justify-content: center;
     min-height: 330px;
   }
 
   .page-header__intro-text {
     font-size: 50px;
     padding: 0 20px;
+    line-height: 1.2;
   }
 
   .page-header__intro-lead {

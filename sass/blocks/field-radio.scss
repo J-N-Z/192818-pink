@@ -55,7 +55,7 @@
 @media screen and (min-width: $screen-md) {
   .field-radio {
     border: 2px solid #e5e5e5;
-    padding: 40px 50px;
+    padding: 40px 59px 53px 59px;
 
     &__title {
       position: relative;
@@ -68,5 +68,11 @@
       padding-left: 30px;
       padding-right: 30px;
     }
+
+    &__text {
+      margin-left: 18px;
+    }
   }
+
+
 }

@@ -77,7 +77,7 @@
 
 @media screen and (min-width: $screen-md) {
   .feedback-form {
-    margin-bottom: 45px;
+    margin-bottom: 50px;
 
     &__wrap {
       display: flex;
@@ -98,6 +98,7 @@
 
     &__section {
       width: 100%;
+      padding: 35px 0 30px 0;
 
       &--marked {
         background-color: inherit;
@@ -106,6 +107,10 @@
       &--md-bordered {
         border: 2px solid #e5e5e5;
         padding: 40px 50px;
+      }
+
+      &--checkbox {
+        padding-bottom: 64px;
       }
     }
 
@@ -140,6 +145,20 @@
 
     &__submit-wrap {
       margin-top: 60px;
+    }
+
+    &__textarea {
+      margin-bottom: 9px;
+    }
+  }
+
+  .feedback-form__section--contacts {
+    .field-text__items-wrap {
+      margin-top: -14px;
+    }
+
+    .field-text {
+      padding: 40px 60px 26px 54px;
     }
   }
 }

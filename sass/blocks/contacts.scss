@@ -51,6 +51,10 @@
 }
 
 @media screen and (min-width: $screen-md) {
+  .contacts {
+    padding-top: 44px;
+  }
+
   .contacts__title {
     font-size: 40px;
     margin-bottom: 40px;
@@ -65,7 +69,7 @@
   .contacts__item {
     width: 50%;
     &:not(:last-child) {
-      margin-bottom: 40px;
+      margin-bottom: 42px;
     }
   }
 }

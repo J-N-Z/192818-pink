@@ -17,20 +17,28 @@
     .container {
       display: flex;
     }
+
     &__logo,
     &__socials,
     &__powered {
       flex-grow: 1;
       margin-bottom: 0;
     }
+
     &__powered {
       padding-top: 10px;
     }
+
     &__logo {
       text-align: left;
     }
+
     &__powered {
       text-align: right;
+    }
+
+    &__socials {
+      margin-right: 10px;
     }
   }
 }

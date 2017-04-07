@@ -76,7 +76,16 @@
 @media screen and (min-width: $screen-md) {
   .main-menu {
     &__top-panel {
-      padding: 35px 0;
+      padding: 37px 0;
+    }
+
+    &__logo {
+      margin-left: 20px;
+      margin-top: -8px;
+    }
+
+    &__switcher {
+      margin-right: 20px;
     }
   }
 }
