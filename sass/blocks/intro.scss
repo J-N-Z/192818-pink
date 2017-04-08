@@ -1,6 +1,7 @@
 .intro {
   // padding: 30px 25px 25px 25px;
   padding-top: 25px;
+  padding-bottom: 56px;
   text-align: center;
 
   &__text {
@@ -15,9 +16,8 @@
     position: relative;
     width: 100%;
     z-index: 1;
-    bottom: -58px;
-    height: 55px;
-    z-index: 1;
+    top: 0;
+    height: 33px;
   }
 
   &__container {

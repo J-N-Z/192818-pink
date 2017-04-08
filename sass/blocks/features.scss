@@ -1,5 +1,5 @@
 .features {
-  padding: 50px 0 305px 0;
+  padding: 0 0 302px 0;
   background-color: #f2f2f2;
   text-align: center;
   background-image: url(../img/iphone-screen-mobile@1x.png);
@@ -7,11 +7,11 @@
   background-repeat: no-repeat;
 
   &__container {
-    padding-top: 11px;
+    padding-top: 27px;
   }
 
   &__item {
-    margin: 0 0 34px 0;
+    margin: 0 0 28px 0;
 
     &:last-child {
       margin: 0;
@@ -20,12 +20,13 @@
 
   &__item-text {
     line-height: 1.6;
+    margin-top: 0;
   }
 
   &__item-title {
     font-size: $font-size-big;
     font-weight: 600;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
   }
 }
 

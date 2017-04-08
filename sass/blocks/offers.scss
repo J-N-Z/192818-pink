@@ -43,6 +43,7 @@
   &__item-title {
     font-size: $font-size-big;
     font-weight: 600;
+    text-transform: uppercase;
     margin: 0 0 10px 0;
   }
 
@@ -90,7 +91,7 @@
 }
 
 .offers__dots {
-  margin-top: 39px;
+  margin-top: 40px;
 }
 
 @media screen and (min-width: $screen-md) {
