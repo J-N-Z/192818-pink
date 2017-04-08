@@ -73,6 +73,8 @@
     background-repeat: no-repeat;
     background-position: top center;
     background-size: auto 300px;
+    width: 240px;
+    margin-bottom: 0;
 
     &--first {
       background-image: url(../img/iphone-screen-1-desktop@1x.png);
@@ -102,22 +104,26 @@
   }
 
   .features__items-wrap {
+    display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .features__container {
     background-image: none;
-  }
-
-  .features__item {
-    width: 250px;
-    margin-bottom: 0;
+    margin-top: -150px;
   }
 
   .features__item-title {
     font-size: 30px;
-    margin-top: 0;
+    line-height: 1;
+    margin-top: 5px;
+    margin-bottom: 25px;
+  }
+
+  .features__item-text {
+    font-size: $font-size-big;
+    line-height: 1.7;
   }
 }

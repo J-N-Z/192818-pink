@@ -58,7 +58,7 @@
 
 @media screen and (min-width: $screen-lg) {
   .reviews {
-    padding: 70px 0 60px 0;
+    padding: 70px 0 0 0;
   }
 
   .reviews__container {
@@ -67,7 +67,7 @@
   }
 
   .reviews__item {
-    padding-top: 110px;
+    padding-top: 115px;
     position: relative;
 
     &:before {
@@ -91,6 +91,11 @@
 
   .reviews__item-text {
     margin-top: 0;
+  }
+
+  .reviews__item-post {
+    font-size: $font-size-big;
+    margin-top: 3px;
   }
 
   .reviews__dots {

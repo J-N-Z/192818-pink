@@ -177,8 +177,22 @@
     margin: 0 auto;
   }
 
+  .offers__table-td:first-child,
+  .offers__item-head {
+    width: 175px;
+  }
+
+  .offers__item-head {
+    padding: 20px 10px;
+  }
+
   .offers__item-text {
-    padding: 20px 20px;
+    font-size: $font-size-big;
+    padding: 16px 27px;
+  }
+
+  .offers__item-price {
+    font-size: 24px;
   }
 
   .offers__triangle {
@@ -186,7 +200,7 @@
   }
 
   .offers__container {
-    margin-top: 80px;
+    margin-top: 57px;
   }
 
   .offers__item-head--hit {

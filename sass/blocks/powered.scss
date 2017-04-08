@@ -19,3 +19,9 @@
     }
   }
 }
+
+@media screen and (min-width: $screen-lg) {
+  .powered__text {
+    font-size: $font-size-big;
+  }
+}

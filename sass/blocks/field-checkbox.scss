@@ -82,9 +82,14 @@
 }
 
 @media screen and (min-width: $screen-lg) {
+  .field-checkbox {
+    padding-bottom: 16px;
+  }
+
   .field-checkbox__items-wrap {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 4px;
   }
 
   .field-checkbox__item {
@@ -94,6 +99,7 @@
   }
   .field-checkbox__text {
     margin-left: 15px;
+    padding-top: 7px;
   }
 
   .field-checkbox__input-visible{

@@ -120,13 +120,17 @@
     &__item {
       display: inline-block;
       vertical-align: top;
-      padding: 0 37px;
+      padding: 0 40px;
+
+      &:last-child {
+        padding-right: 0;
+      }
     }
 
     &__link {
       border: none;
       font-weight: 400;
-      padding: 10px 0;
+      padding: 0px 0 10px 0;
       border-bottom: 2px solid transparent;
       text-transform: none;
 

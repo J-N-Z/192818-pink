@@ -47,7 +47,7 @@
   .effect {
     background-color: #f2f2f2;
     padding-top: 0;
-    padding-bottom: 50px;
+    padding-bottom: 68px;
   }
 
   .effect__content {
@@ -55,7 +55,24 @@
   }
 
   .effect__inner-container {
+    display: block;
     min-height: 350px;
     background-size: auto;
+    padding-top: 90px;
+  }
+
+  .effect__title {
+    br {
+      display: none;
+    }
+  }
+
+  .effect__text,
+  .effect__link {
+    font-size: $font-size-big;
+  }
+
+  .effect__text{
+    margin-bottom: 38px;
   }
 }

@@ -173,9 +173,23 @@
 @media screen and (min-width: $screen-lg) {
   .photos {
     &__item {
+      margin-bottom: 54px;
+
       &:nth-last-child(3):not(.photos__item--panorama) {
         margin-bottom: 0;
       }
     }
+  }
+
+  .photos__caption-container:after {
+    right: 0;
+  }
+
+  .photos__item-wrap {
+    min-height: 154px;
+  }
+
+  .photos__item--panorama .photos__item-wrap {
+    min-height: auto;
   }
 }

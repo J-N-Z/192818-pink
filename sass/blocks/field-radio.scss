@@ -73,6 +73,22 @@
       margin-left: 18px;
     }
   }
+}
 
+@media screen and (min-width: $screen-lg) {
+  .field-radio {
+    position: relative;
+    padding-left: 73px;
+  }
 
+  .field-radio__title {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+
+  .field-radio__items-wrap {
+    padding-top: 20px;
+  }
 }

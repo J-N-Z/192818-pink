@@ -75,7 +75,7 @@
 @media screen and (min-width: $screen-md) {
   .page-header__intro {
     .container {
-      width: 660px;
+      // width: 660px;
       padding: 70px 20px 32px 20px;
       line-height: 1.2;
     }
@@ -142,6 +142,7 @@
 
   .page-header__intro-lead-wrap {
     background-color: transparent;
+    width: 660px;
   }
 
   .page-header__intro-button {
@@ -154,6 +155,8 @@
 
 @media screen and (min-width: $screen-lg) {
   .page-header__intro {
+    min-height: 744px;
+
     &.container {
       width: 940px;
     }
@@ -169,21 +172,21 @@
   }
 
   .page-header__intro-button {
-    margin-bottom: 60px;
+    margin-bottom: 69px;
     font-size: 21px;
-    width: auto;
-  }
-
-  .page-header__intro {
-    min-height: 740px;
+    width: 300px;
   }
 
   .page-header__intro .container {
-    padding: 5px 20px 30px 20px;
+    padding: 65px 20px 30px 20px;
   }
 
   .page-header__intro--inner {
     min-height: 285px;
+  }
+
+  .page-header__intro-lead-wrap {
+    width: 940px;
   }
 
   .page-header__intro-lead {
@@ -194,6 +197,8 @@
   .page-header__intro-lead-text {
     margin-top: 0;
     font-size: 50px;
+    padding-top: 27px;
+    margin-bottom: 52px;
   }
 
   .page-header__intro-text {
@@ -205,7 +210,7 @@
     height: 645px;
     background-image: url(../img/iphone-hand-desktop@1x.png);
     background-size: 1050px auto;
-    background-position: -15% 0;
+    background-position: -21% 0;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url(../img/iphone-hand-desktop@2x.png);

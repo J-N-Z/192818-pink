@@ -15,4 +15,19 @@
       padding: 90px 0 46px 0;
     }
   }
+
+  .inner-intro {
+    padding: 90px 0 91px 0;
+  }
+
+  .inner-intro--photo {
+    padding-top: 57px;
+    padding-bottom: 74px;
+  }
+
+  .inner-intro--form {
+    br {
+      display: none;
+    }
+  }
 }

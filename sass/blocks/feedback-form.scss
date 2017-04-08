@@ -164,6 +164,10 @@
 }
 
 @media screen and (min-width: $screen-lg) {
+  .feedback-form {
+    margin-bottom: 29px;
+  }
+
   .feedback-form__wrap {
     justify-content: center;
   }
@@ -192,11 +196,32 @@
 
     .field-radio {
       border: 2px solid #e5e5e5;
-      padding: 36px 50px;
+      padding: 36px 73px 52px 73px;
     }
   }
 
   .feedback-form__section--contacts {
-    padding-bottom: 70px;
+    padding-bottom: 29px;
+
+    .field-text {
+      padding: 40px 60px 18px 54px;
+    }
+  }
+
+  .feedback-form__section--text {
+    padding-top: 0;
+  }
+
+  .feedback-form__section--textarea {
+    padding: 40px 59px;
+  }
+
+  .feedback-form__textarea {
+    height: 129px;
+    margin-bottom: 0;
+  }
+
+  .feedback-form__submit-wrap {
+    margin-top: 65px;
   }
 }

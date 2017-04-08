@@ -75,11 +75,20 @@
 }
 
 @media screen and (min-width: $screen-lg) {
+  .contacts {
+    padding-top: 64px;
+    padding-bottom: 0;
+  }
+
   .contacts__item {
     width: 33%;
     &:nth-child(2) {
       order: 2;
     }
+  }
+
+  .contacts__item-title {
+    margin-bottom: 19px;
   }
 
   .contacts__title {
