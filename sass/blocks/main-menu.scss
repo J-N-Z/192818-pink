@@ -92,8 +92,12 @@
 
 @media screen and (min-width: $screen-lg) {
   .main-menu {
+    &__logo {
+    margin-left: 10px;
+  }
+
     &__top-panel {
-        padding: 25px 0 40px;
+        padding: 34px 0 40px;
     }
 
     &__outer-container {
@@ -111,6 +115,8 @@
       justify-content: flex-end;
       display: flex;
       align-items: center;
+      padding-right: 10px;
+      padding-top: 9px;
     }
 
     &__switcher {

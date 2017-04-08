@@ -33,7 +33,7 @@
 
 @media screen and (min-width: $screen-md) {
   .download {
-    text-align: left;
+    // text-align: left;
   }
 
   .download__description {
@@ -41,21 +41,33 @@
     margin-top: 35px;
     margin-bottom: 0;
     line-height: 1.4;
-    margin-left: -18px;
+    margin-left: -15px;
   }
 
   .download__icon {
+    margin: 0 17px;
+
     &:not(:last-of-type) {
-      margin: 0 20px;
+      margin: 0 17px;
     }
 
     display: inline-block;
-    margin: 0 20px;
+    // margin: 0 20px;
   }
 }
 
 @media screen and (min-width: $screen-lg) {
+  .download {
+    text-align: left;
+  }
+
   .download__description {
     margin-top: 50px;
   }
+
+  .download__icon:not(:last-of-type) {
+    margin: 0 19px;
+  }
+
+
 }
