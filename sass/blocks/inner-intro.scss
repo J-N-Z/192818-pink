@@ -1,5 +1,5 @@
 .inner-intro {
-  padding: 47px 0;
+  padding: 45px 0 49px 0;
   margin: 0;
   line-height: 2.2;
   text-align: center;
@@ -8,7 +8,7 @@
 @media screen and (min-width: $screen-md) {
   .inner-intro {
     font-size: $font-size-big;
-    padding: 90px 0 78px 0;
+    padding: 90px 0 79px 0;
     line-height: 1.7;
 
     &--form {
@@ -16,12 +16,8 @@
     }
   }
 
-  .inner-intro {
-    padding: 90px 0 91px 0;
-  }
-
   .inner-intro--photo {
-    padding-top: 57px;
+    padding-top: 68px;
     padding-bottom: 74px;
   }
 
@@ -29,5 +25,15 @@
     br {
       display: none;
     }
+  }
+}
+
+@media screen and (min-width: $screen-lg) {
+  .inner-intro {
+    padding-bottom: 89px;
+  }
+
+  .inner-intro--photo {
+    padding-top: 62px;
   }
 }
