@@ -5,6 +5,12 @@
   text-align: center;
 }
 
+.inner-intro--form {
+  br {
+    display: none;
+  }
+}
+
 @media screen and (min-width: $screen-md) {
   .inner-intro {
     font-size: $font-size-big;
@@ -35,5 +41,6 @@
 
   .inner-intro--photo {
     padding-top: 62px;
+    padding-bottom: 73px;
   }
 }

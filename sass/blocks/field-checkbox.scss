@@ -21,7 +21,6 @@
 
   &__text,
   &__input-visible {
-    // display: inline-block;
     vertical-align: middle;
   }
 
@@ -84,6 +83,8 @@
 @media screen and (min-width: $screen-lg) {
   .field-checkbox {
     padding-bottom: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .field-checkbox__items-wrap {
@@ -93,10 +94,12 @@
   }
 
   .field-checkbox__item {
-    width: 31%;
-    margin-right: 2%;
+    width: 33%;
+    margin-right: 0;
     display: flex;
+    padding-left: 48px;
   }
+
   .field-checkbox__text {
     margin-left: 15px;
     padding-top: 7px;
@@ -104,5 +107,29 @@
 
   .field-checkbox__input-visible{
     min-width: 40px;
+  }
+
+  .field-checkbox__item:nth-child(1) {
+    order: -6;
+  }
+
+  .field-checkbox__item:nth-child(2) {
+    order: -3;
+  }
+
+  .field-checkbox__item:nth-child(3) {
+    order: -5;
+  }
+
+  .field-checkbox__item:nth-child(4) {
+    order: -2;
+  }
+
+  .field-checkbox__item:nth-child(5) {
+    order: -4;
+  }
+
+  .field-checkbox__item:nth-child(6) {
+    order: -1;
   }
 }

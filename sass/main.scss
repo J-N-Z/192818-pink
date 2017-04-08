@@ -10,10 +10,22 @@ body {
   padding: 0 20px;
 }
 
+.xs-hidden {
+  display: none;
+}
+
 @media screen and (min-width: $screen-md) {
   .container {
     width: 660px;
     margin: 0 auto;
+  }
+
+  .xs-hidden {
+    display: inline;
+  }
+
+  .md-hidden {
+    display: none;
   }
 }
 
@@ -21,5 +33,9 @@ body {
   .container {
     width: 940px;
     padding: 0;
+  }
+
+  .md-hidden {
+    display: inline;
   }
 }
