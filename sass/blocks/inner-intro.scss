@@ -31,6 +31,10 @@
     br {
       display: none;
     }
+
+    .xs-hidden {
+      display: block;
+    }
   }
 }
 
@@ -42,5 +46,11 @@
   .inner-intro--photo {
     padding-top: 62px;
     padding-bottom: 73px;
+  }
+
+  .inner-intro--form {
+    .xs-hidden {
+      display: inline;
+    }
   }
 }
